@@ -1,0 +1,183 @@
+.main_h2 {
+    text-align: center;
+    font-family: "Roboto", Sans-serif;
+    font-size: 32px;
+    padding-top: 4rem;
+    margin: 0rem auto 1rem;
+    font-weight: 700;
+}
+
+.form_label {
+    text-align: left !important;
+    font-family: "Poppins", Sans-serif !important;
+    font-size: 25px !important;
+    text-transform: inherit !important;
+    margin-bottom: 10px;
+}
+
+input.form-control {
+    border: 1px solid #818a91 !important;
+    border-radius: 0px;
+    min-height: 54px;
+    line-height: 1.4;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+}
+
+input.form-control:focus {
+    border: 1px solid #000 !important;
+    outline: none;
+}
+.select_flex select {
+    font-size: 17px;
+    border: 1px solid #818a91 !important;
+    border-radius: 0px;
+}
+
+.select_flex select.form-control:focus {
+    border: 1px solid #000 !important;
+}
+
+.button {
+    text-transform: uppercase !important;
+    font-size: 15px;
+    background-color: #DC2626;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 0.0333em;
+}
+.form_div {
+    width: 576px;
+    padding: 1rem 5px;
+}
+.mt-1em {
+    margin-bottom: 10px;
+}
+#step-4 .form_label,
+#step-4 .mt-1em {
+    margin-bottom: 20px;
+}
+ul.form-stepper{
+    margin-bottom: 30px;
+}
+ul.form-stepper li.form-stepper-unfinished a .form-stepper-circle{
+    border-radius: 50%;
+}
+.form-stepper li .form-stepper-circle::before{
+    content: "";
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 16px;
+    width: 8px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    margin-top: 5px
+}
+.form-stepper  li.form-stepper-active .form-stepper-circle::before{
+    content: "";
+    border-radius: 9999px;
+    animation: ping 1s cubic-bezier(0,0,.2,1) infinite;
+    -webkit-animation: ping 1s cubic-bezier(0,0,.2,1) infinite;
+    animation: ping 1s cubic-bezier(0,0,.2,1) infinite;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    transition-delay: .3s;
+    background: #007cc2;
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 8.5px;
+    left: 8px;
+    border-bottom: inherit;
+    border-right: inherit;
+    margin-top: 0px
+}
+
+@-webkit-keyframes ping {
+    75%,to {
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+@keyframes ping {
+    75%,to {
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+.animate-ping {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    animation: ping 1s cubic-bezier(0,0,.2,1) infinite
+}
+
+.form-stepper .form-stepper-completed .form-stepper-circle span,
+.form-stepper .form-stepper-active .form-stepper-circle span{
+    opacity: 0;
+}
+.form-stepper .form-stepper-active .form-stepper-circle:hover {
+    background-color: #ffffff !important;
+}
+
+ul.form-stepper .form-stepper-circle span{
+    opacity: 0;
+}
+.form-stepper-horizontal li:not(:last-child):after {
+    height: 1.5px;
+}
+.success_msg {
+    color: #68D830;
+    font-size: 1em;
+    line-height: 1;
+}
+.radio_check {
+    position: relative;
+    left: 6px;
+}
+span.points_123 {
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+}
+
+.points_123 a {
+    text-decoration: none;
+    color: #7f54dd;
+}
+
+.health_section {
+    min-height: calc(100vh - 470px);
+}
+ul.form-stepper li a .form-stepper-circle{
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1600px) {
+    .health_section {
+        min-height: 58vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    .form_div {
+        width: 100%;
+    }
+
+    .form_label {
+        font-size: 23px !important;
+    }
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
